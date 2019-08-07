@@ -37,6 +37,7 @@ class HomePage extends React.Component {
   };
 
   render() {
+    console.log('From render in homePage', this.props.authUser);
     return (
       <CalendarHeatmap
         startDate={startOfMonth(subMonths(new Date(), 12))}

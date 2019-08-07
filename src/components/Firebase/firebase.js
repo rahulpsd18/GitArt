@@ -19,6 +19,7 @@ class Firebase {
 
   signInWithGithub = () => {
     const provider = new app.auth.GithubAuthProvider();
+    provider.addScope('repo');
     return this.auth.signInWithPopup(provider);
   };
 
